@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Métricas</title>
+    <style>
+        Body {
+            font-family: Arial;
+            background-image: url(https://img.freepik.com/vetores-premium/plano-de-fundo-preto-e-cinza-com-sobreposicao-de-quadrados-geometricos-e-estilo-de-papel-de-sombra_518299-48.jpg);
+            background-size: cover;
+            background-position: center center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0
+    
+        }
+        /* Estilo para o conteúdo do formulário */
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo com transparência para contraste com a imagem */
+            padding: 30px;
+            border-radius: 8px; /* Bordas arredondadas */
+            text-align: left; /* deixando o texto no lado esquerdo */
+            width: 100%;
+            max-width: 500px; /* Definindo um tamanho máximo para o formulário */
+        }
+
+        /* Estilo do título */
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo dos labels e inputs */
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 1.1rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Simulador de Métricas<br>de Conteúdo</h1>
+    
+    <form action="metrica.html" method="get">
+        <label for="curtidas">curtidas</label>
+        <input type="number" name="curtidas" id="curtidas" required><br><br>
+
+        <label for="comentários">Comentários</label>
+    <input type="number" name="comentários" id="comentários" required><br><br>
+
+    <label for="Compartilhamento">Compartilhamento</label>
+    <input type="Number" name="Compartilhamento" id="Compartilhamento" required><br><br><br>
+
+    <button type="submit"> Calcular Engajamento</button>
+
+    </form>
+
+</body>
+</html>
